@@ -1,0 +1,151 @@
+:root {
+    --accent-color: #bf7c45;
+}
+
+section[class^="container"] {
+    padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    section[class^="container"] {
+        padding: 4rem;
+    }
+    nav[class^="container"] {
+        padding: 0 4rem;
+    }
+}
+
+section:not(:first-of-type) {
+    text-align: center;
+}
+
+section:nth-child(5n) {
+    background-color: #ecf2ff; /* Ensure consistent background color */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bf7c45;
+}
+
+section.card, .btn-outline-dark {
+    border: 3px solid black; /* Updated to make the border bold */
+    box-shadow: 4px 4px black;
+    transition: all 0.4s;
+}
+
+.btn-outline-dark:hover {
+    box-shadow: 4px 4px var(--accent-color);
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-nav.nav-link {
+    color: black;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.navbar-nav.nav-link {
+    color: #bf7c45;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-nav .nav-item {
+        padding: 0 1rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/*HERO*/
+section.hero {
+    background-color: #ecf2ff;
+    padding-top: 72px;
+}
+
+/*only for small screen*/
+@media screen and (min-width: 576px) {
+    section.hero {
+        text-align: center;
+    }
+    section.hero.img {
+        width: 70%;
+    }
+}
+
+/*skills*/
+section.services {
+    background-color: #ecf2ff; /* Set background color for skills section */
+}
+
+section.services i {
+    font-size: 2rem;
+    margin: 1rem auto 0;
+    border: 2px solid black;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+section.card, .btn-outline-dark {
+    border: 3px solid black; /* Updated to make the border bold */
+    box-shadow: 4px 4px black;
+    transition: all 0.4s;
+}
+
+.btn-outline-dark:hover {
+    box-shadow: 4px 4px var(--accent-color);
+}
+
+section.card {
+    max-width: 22rem;
+    margin-inline: auto;
+}
+
+/* Add margin-bottom to services section */
+section.services {
+    margin-bottom: 2rem; /* Adjust the value as needed */
+}
+
+/*about*/
+section.about {
+    background-color: #ecf2ff; /* Set background color for about section */
+}
+
+@media screen and (min-width: 1024px) {
+    section.about.container {
+        width: 60%;
+    }
+}
+
+/*project*/
+section.project {
+    background-color: #ecf2ff; /* Set background color for project section */
+}
+
+section.project.card {
+    max-width: 17rem;
+    text-align: left;
+}
+
+section.project.card img {
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+/*contact*/
+section.contact .social-media a {
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+}
